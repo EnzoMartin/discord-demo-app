@@ -6,12 +6,11 @@ import Constants from '../constants';
 import '../styles/App.css';
 
 // Generics
-import Navigation from './Navigation';
 import Header from '../components/Header';
 
 // Pages
 import Home from './Home';
-import About from './About';
+import Modal from './Modal';
 
 const history = createHistory();
 
@@ -27,15 +26,9 @@ function App(){
           </tr>
           <tr>
             <td>
-              <Route path={Constants.ROUTE_HOME} component={Navigation} />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <Switch>
-                <Route exact path={Constants.ROUTE_HOME} component={Home} />
-                <Route exact path={Constants.ROUTE_ABOUT} component={About} />
-              </Switch>
+              <Route path={Constants.ROUTE_HOME} component={Home} />
+              <Route path={Constants.ROUTE_MODAL_HOME} component={Modal} />
+              <Route exact path={Constants.ROUTE_MODAL_DETAIL} component={Modal} />
             </td>
           </tr>
         </tbody>

@@ -22,7 +22,7 @@ function loadFromStorage(key, value = {}){
 
 // State injection
 const stateTriggers = [
-  // [Constants.SET_PROJECTS, loadFromStorage(Stuff, {})]
+  [Constants.SET_MODALS, loadFromStorage('modals', [])]
 ];
 
 const options = [

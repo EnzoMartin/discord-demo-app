@@ -1,0 +1,21 @@
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  background: #FFF;
+  padding: 16px;
+}
+
+#modal table {
+  width: 100%;
+}
+
+#modal table td {
+  width: 20%;
+}
+
+#modal table td + td {
+  border-left: 1px solid #333;
+  width: 80%;
+}

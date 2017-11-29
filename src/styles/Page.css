@@ -1,0 +1,7 @@
+.page {
+  text-align: left;
+  border-bottom: 1px solid #CCC;
+  padding: 8px;
+  max-width: 900px;
+  margin: 16px auto;
+}
